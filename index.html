@@ -62,16 +62,13 @@
                         <a href="swathi_resume.pdf">CV</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#software">Software</a>
+                        <a href="#workexperience">Work experience</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#publications">Publications</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#petprojects">Pet Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="imageinpainting.html">Image Inpainting</a>
                     </li>
                 </ul>
             </div>
@@ -87,96 +84,117 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="intro-text">
-                        <span class="skills">Once Design Engineer, Now Computer Engineering grad</span>
+                        <span class="skills">Luck is great, but most of life is hard work</span>
                         <hr class="star-light">
                     </div>
                 </div>
             </div>
             <div class="row">   
-                <div class="col-sm-3">
-                    <img src="img/portrait_swathi.jpeg" alt="portrait" class="img-responsive img-rounded">
+                <div class="col-sm-4 text-center">
+                    <img src="img/swathi.jpg" alt="portrait" class="img-responsive img-rounded">
                 </div>
                 <div class="col-sm-8 text-left">
-                    <p> I am a Master's student in Carnegie Mellon University studying Computer Vision. My passion for Computer Vision started when I was introduced to classical Image Processing techniques during my undergraduate sophomore. Starting from then, I have constantly involved myself in many pet projects and real projects!</p>
-                    <p> I did my undergraduate junior year internship at Texas Instruments, Bangalore, India. It was the first true transition into pure Computer Vision. I got introduced to multi-view geometry by Zisserman which is one book that I cherish! I got to develop an algorithm to segment the road in street scenes. I used homography with modification which I published and patented.</p>
-                    <p> I have worked at Texas Instruments, Bangalore, India for 3 awesome years. I had the best oppotunity to work on different levels of embedded vision application development. I have worked on OpenCL based algorithm acceleration, assembly level code optimization, dataset creation, machine learning, deep learning, OpenCV porting to TI BIOS. </p>
+                    <p> I am a Computer Engineering Master's student at Texas A\&M University. I aspire to specialize in VLSI systems and digital design to augment my knowledge in the developement of system on chip, the core hardware component that drives the growth of Internet of Things and meets the complex computational demands of today. I intend to pursue industrial research towards acheiving differentiated, optimized and reliable solutions in the field of integarted circuits to contribute towards emerging technological trends</p>
+                    <p> I believe that the semiconductor industries have a huge role to play in the society. The hunger for faster, smaller and power effecient chips never recedes. With these requisites come more challenges in realizing a system on chip with emerging technology. I look forward to address these in my research career. With the right background in understanding its importance to learning the current limitations in the field of VLSI and computer architecture, I am committed to learn and work towards a better technological tomorrow.</p>
                 </div>
             </div>
         </div>
     </section>
     </header>
 
-    <section id="software" class="success">
+    <section id="workexperience" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h2>Software</h2>
+                    <h2>Work experience</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <p>I have three years of work experience as a Design Engineer at Texas Instruments. I was part of a team that develops low power SOCs with multiple sleep modes for industrial applications. My prime responsibility was a quality handoff of SOC to the synthesis team.</p>
+            <div class="row">
+                <div class="col-sm-3">
+                	<img src="img/integration.png" alt="portrait" class="img-responsive img-rounded"></a>
+                </div>
+                <div class="col-sm-8 text-left">
+                     <p>I interacted with multiple teams geographically located across globe to understand IP functionaltiy and to successfully integrate them into a SOC using tools such as autogen and magillem. This also required me to design a glue-logic block that would handle any synchronization requirements between IPs.</p>
+                     <p>During the process, I developed expertise in IPXACT-1685 standards, which is a skeleton representation of an IP used by integration tools. I used this expertise to identify and develop automated checkers for IP handoff that was used across teams.</p>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                	<img src="img/lint.jpeg" alt="portrait" class="img-responsive img-rounded"></a>
+                </div>
+                <div class="col-sm-8 text-left">
+                     <p>A quality SOC handoff also means to ensure the design is free of errors and bugs. </p>
+                     <p>I handled the SOC lint check using spyglass tool. It is used to identify potential bugs in an early stage such as incomplete case or if statements that can result in latches, potential simulation vs synthesis mismatches that results in logic behaving differently than as expected and design constructs that are non-synthesizable.</p>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                	<img src="img/low_power.jpg" alt="portrait" class="img-responsive img-rounded"></a>
+                </div>
+                <div class="col-sm-8 text-left">
+                     <p>Low power SOC has multiple sleep modes that the user can configure according to its application. </p>
+                     <p>I worked in a team of 4 to verify SOC during these sleep modes using Cadence NCSIM. The goal was to ensure that the system can enter and exit sleep modes gracefully. System level scenarios were targetted to also check the time to enter and exit sleep modes does not violate system specifications.</p>
+                     <p>During sleep modes, a part of the SOC is shut off while the remaining is still on. The ON system must function as usual. This requires isolation of the ON system from the OFF system. I developed automatic creation of isolation checkers using perl and CPF that verifies the correctness of these isolations. This helped in catching issues during early design cycle. </p> 
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                	<img src="img/cache_analysis.png" alt="portrait" class="img-responsive img-rounded"></a>
+                </div>
+                <div class="col-sm-8 text-left">
+                     <p>Besides SOC design and verification, I had the opportunity to work on architecture analysis and design of instruction cache. I performed analysis based on cache hits/misses as a trade off between area, power and performance using industrial standard benchmarks such as Coremark and Dhrystone. My main area of focus was to design a cache that would handle cycle dependencies keeping area and power minimal. </p>
+                </div>
+            </div>
+    </section>
+
+    <section id="projects" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Projects</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
-                    <img src="img/IIP_1.jpg" alt="IIP logo" class="img-responsive img-rounded">
-                    <img src="img/IIP_2.jpg" alt="IIP logo" class="img-responsive img-rounded">
+                    <a href="img/ITTAGE.png"><img src="img/ITTAGE.png" alt="portrait" class="img-responsive img-rounded"></a>
                 </div>
                 <div class="col-sm-8">
-                    <h3>Intelligent Inpainting</h3>
-                    <p>role: author</p>
-                    <p> Intelligent Inpainting is a Computer Vision application developed in C++. It takes a single image and a user click. The click is intented to select a person on the input image. Then the application intelligently crops that person out of the image by filling with the background.</p>
-                    <p>
-                    <a class="btn btn-primary" href="https://suriyanitt.github.io/imageinpainting.html">Project website<span
-                            class="glyphicon glyphicon-chevron-right">
-                    </span></a>
-                    <a class="btn btn-primary" href="https://github.com/SuriyaNitt/SRA_challenge">Github Repository<span
-                            class="glyphicon glyphicon-chevron-right">
-                    </span></a>
-                    </p>
+                    <h3>ITTAGE - Indirect branch predictor</h3>
+                    <p> ITTAGE (Indirect Target TAgged GEometric length predictor) is the state of the art indirect branch target predictor. It uses multiple prediction tables hashed using global branch history and PC to achieve an unprecedented level of accuracy. The use of geometric lenghts allows the predictor to use correlation with large global history bits range. The use of multiple tables enables in exploiting correlation with small as well as long history bits. This project is an implmentation of it in C++ acheiving a speedup of 93%. Enhancements on the project were: </p>
+                    <p> 1. Base table improvement: Base table of ITTAGE is indexed from PC. This implementation proposes to index base table with a hash function of PC and previous target. This improves performance on benchmarks that have less correlation with conditional branch bits from global history to acheive an overall speedup of 5.3% on SPEC CPU 2006 traces. </p>
+                    <p> 2. Altpred: Altpred (alternate prediction) is the target used when the confidence on the predicted taregt is low in ITTAGE. The confidence comes from the confidence counter which are incemented when the prediction is right and decremented otherwise. This implementation proposes to use the main prediction itself when the confidence on altpred is low too. This proposal seems to improve overall performance, but not significantly. </p>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-sm-3">
-                    <img src="img/sfm.jpg" alt="sfm logo" class="img-responsive img-rounded center-block">
+                    <a href="img/cache-1.png"><img src="img/cache-1.png" alt="portrait" class="img-responsive img-rounded"></a>
                 </div>
                 <div class="col-sm-8">
-                    <h3>Structure from Motion </h3>
-                    <p>role: author</p>
-                    <p>Developed a SfM application in C++ from scratch. The project provided good opportunity to understand multi-view geometry.</p>
+                    <h3>Perceptron based cache reuse predictor</h3>
+                    <p> Effect of large penalty caused by a miss on last level cache gives rise to the need for a better replacement policy. Perceptron based reuse prediction is used to identify dead blocks in the cache- blocks predicted not to be referenced again. </p>
+                    <p> This algorithm learns from a few sampled sets and generalizes it to the entire cache, thereby reducing area and power. Its key features include its ability to learn and predict faster as the sampling algorithm is only updated on a reference to sampler sets. This project is implemented in C++ and acheives an overall geometric mean speedup of 6.4% on SPEC CPU 2006 benchmarks.</p>
                 </div>
             </div>
             <hr>
             <div class="row">
-                <div class="col-sm-2">
-                    <img src="img/rtss.png" alt="rtss logo" class="img-responsive img-rounded center-block">
+                <div class="col-sm-3">
+                    <a href="img/ir_remote.jpg"><img src="img/ir_remote.jpg" alt="portrait" class="img-responsive img-rounded"></a>
                 </div>
                 <div class="col-sm-8">
-                    <h3>Realtime sudoku solver </h3>
-                    <p>role: author</p>
-                    <p>An android application that uses camera to search for sudoku in its view and solves it upon detecting one.</p>
-                    <p>
-                    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.rtss">Playstore link<span
-                            class="glyphicon glyphicon-chevron-right">
-                    </span></a>
-                    </p>
+                    <h3>Hardware Software Co-design</h3>
+                    <p>Created an IR receiver in hardware that tests, receives and decodes a IR signal. The decoding logic is implemented in Verilog on Xilinx FPGA board. An interrupt based device driver is developed in Linux environment to print out the decoded message onto the display. </p>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                    <img src="img/astro_adventure.png" alt="Astro Adventure logo" class="img-responsive img-rounded center-block">
-                </div>
-                <div class="col-sm-8">
-                    <h3>Astro Adventure </h3>
-                    <p>role: author</p>
-                    <p>Trion the shape shifting alien has fallen from his spaceship. Help him get back to the ship by swiping your way around the galaxy. Try and keep him within the screen. If he falls out of the screen, he's dead. So swipe wisely!!! And have fun.!</p>
-                    <p>
-                    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.me.astrogame">Playstore link<span
-                            class="glyphicon glyphicon-chevron-right">
-                    </span></a>
-                    </p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section id="publications" class="success">
@@ -188,108 +206,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <p>Shyam Jagannathan, Kumar Desappan, Pramod Swami, Manu Mathew, Soyeb Nagori, Kedar Chitnis, Yogesh Marathe, Suriya Narayanan and Anshu Jain:<br>
-                    <a href="http://ieeexplore.ieee.org/document/7889296/"><span>Efficient object detection and classification on low power embedded systems</span></a><br>
-                    2017 IEEE International Conference on Consumer Electronics (ICCE)
-                    </p>
-
-                    <p>Suriya Narayanan and Nagendra Gulur:<br>
-                    <a href="http://ieeexplore.ieee.org/document/7397627/"><span>Understanding the performance benefit of asynchronous data transfers in OpenCL programs executing on media processors</span></a><br>
-                    IEEE 22nd International Conference on High Performance Computing (HiPC), 2015.
-                    </p>
-
-                    <p>Suriya Narayanan and Prashanth Viswanath:<br>
-                    <a href="http://ieeexplore.ieee.org/document/6775971/"><span>Improved Ground Plane detection in real time systems using homography</span></a><br>
-                    ICCE 2014
-                    </p>
-
-                    <p>Sandeep Nital David, Sachin P Santosh and Suriya Narayanan:<br>
-                    <a href="http://ieeexplore.ieee.org/document/6887483/"><span>
-                            Control Strategy for power flow management in a PV system supplying electrical loads in an air-conditioned bus</span></a><br>
-                    IEEE International Conference on Power Signals Control and Computations (EPSCICON), 2014.
-                    </p>
+            	<div class="col-sm-7">
+            		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_DnDvBg5AcztM9BqMiFjDUsPOhqupFx5owsfM-5P6J1z3uLzsPUm-nohVTvy5YwzuxQcuW-odu2v9/embed?start=false&loop=true&delayms=60000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="Patent" class="success">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2>Patent</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>Suriya Narayanan and Prashanth Viswanath:<br>
-                    <a href="https://www.google.com/patents/US20150178573"><span>Ground plane detection US 20150178573 A1</span></a><br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="petprojects" class="success">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2>Pet Projects</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="img/AR.jpg"><img src="img/AR.jpg" alt="portrait" class="img-responsive img-rounded"></a>
-                </div>
-                <div class="col-sm-8">
-                    <h3>Augmented Reality</h3>
-                    <p> Coded an Augmented Reality application from scratch in Matlab.</p>
+                <div class="col-sm-4">
+                	<p></p>
+                    <p>A formal approach towards early RTL quality checks</p>
+                    <p>2017 Cadence Club Formal Conference, Bangalore, India</p>
                 </div>
             </div>
             <hr>
             <div class="row">
-                <div class="col-sm-2">
-                    <a href="img/panorama_1.png"><img src="img/panorama_1.png" alt="portrait" class="img-responsive img-rounded"></a>
-                    <a href="img/panorama_2.png"><img src="img/panorama_2.png" alt="portrait" class="img-responsive img-rounded"></a>
-                    <a href="img/panorama_3.jpg"><img src="img/panorama_3.jpg" alt="portrait" class="img-responsive img-rounded"></a>
+            	<div class="col-sm-7">
+                    <a href="https://drive.google.com/file/d/0B739KP13M08UNVRwUWlCVEFDQXVfQmdobGpNSjRhY0otQmI0/view?usp=sharing"><img src="img/poster_presentation.jpg" alt="portrait" class="img-responsive img-rounded" width="640" height="388"></a>
                 </div>
-                <div class="col-sm-8">
-                    <h3>Panorama</h3>
-                    <p> Create an application for two image image stitching in Matlab from scratch.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="img/scene_classification_1.jpg"><img src="img/scene_classification_1.jpg" alt="portrait" class="img-responsive img-rounded"></a>
-                    <a href="img/scene_classification_2.jpg"><img src="img/scene_classification_2.jpg" alt="portrait" class="img-responsive img-rounded"></a>
-                </div>
-                <div class="col-sm-8">
-                    <h3>Scene Classification</h3>
-                    <p> Code Spatial Pyramid Matching from scratch in Matlab for scene classificaiton.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-8">
-                    <h3>Decision Tree ID3</h3>
-                    <p> Developed the ID3 training algorithm in python from scratch.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-8">
-                    <h3>Fully Connected Network</h3>
-                    <p> Developed a fully connected network in python from scratch. The code contained portions for feed-forward propogation and backward propogation.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8">
-                    <h3>Eye Mouse</h3>
-                    <p> Developed a computer vision application that tracks the eye ball movement and controls the mouse pointer accordingly. OpenCV 2.0 was used for Image Processing and Qt was used for user interface development.</p>
+                <div class="col-sm-4">
+                	<p>Checkpoint Simulation on SOC<br>
+                    <!-- <a href="https://drive.google.com/file/d/0B739KP13M08UNVRwUWlCVEFDQXVfQmdobGpNSjRhY0otQmI0/view?usp=sharing"><span>Poster Presentation</span></a><br> -->
+                    <p>2013 Texas Instruments Poster Presentations, Bangalore, India<br>
+                    </p>
                 </div>
             </div>
         </div>
